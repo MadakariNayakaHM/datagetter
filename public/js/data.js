@@ -1,4 +1,4 @@
- import axios from 'axios';
+
 
 const data= async (name, email,opinion)=>
 {
