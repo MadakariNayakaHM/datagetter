@@ -1,4 +1,4 @@
-// import axios from 'axios';
+ import axios from 'axios';
 
 const data= async (name, email,opinion)=>
 {
@@ -21,4 +21,6 @@ document.querySelector('.form').addEventListener('submit',e=>{
    const opinion=document.getElementById('opinion').value;
    
    
-data(Name,email,opinion)});
+data(Name,email,opinion)
+window.alert("successfully sent the data to databasse")
+});
