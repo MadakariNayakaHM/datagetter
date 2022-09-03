@@ -3,6 +3,7 @@ const app=express();
 const pug=require('pug');
 const path = require('path');
 const helmet=require('helmet');
+const compression = require('compression');
 
 app.use(express.json());
 app.set('view engine', 'pug');
@@ -33,6 +34,7 @@ app.use(
       },
     })
   );
+  app.use(compression);
 app.use('/api/v1/data',dataRouter);
 app.use('/',viewsRouter);
 module.exports=app;
